@@ -127,22 +127,14 @@ def get_columns_with_qty_to_make():
 			"fieldtype": "Data",
 			"width": 170,
 		},
+		{"fieldname": "qty_per_unit", "label": _("Qty"), "fieldtype": "Data", "width": 110},
 		{
 			"fieldname": "unit",
 			"label": _("Unit"),
 			"fieldtype": "Data",
 			"width": 100,
 		},
-		{"fieldname": "qty_per_unit", "label": _("Qty Per Unit"), "fieldtype": "Data", "width": 110},
-		{"fieldname": "available_qty", "label": _("Available Qty"), "fieldtype": "Data", "width": 120},
-		{"fieldname": "required_qty", "label": _("Required Qty"), "fieldtype": "Data", "width": 120},
-		{"fieldname": "difference_qty", "label": _("Difference Qty"), "fieldtype": "Data", "width": 130},
-		{
-			"fieldname": "last_purchase_rate",
-			"label": _("Last Purchase Rate"),
-			"fieldtype": "Data",
-			"width": 160,
-		},
+		{"fieldname": "required_qty", "label": _("Daily Consumption"), "fieldtype": "Data", "width": 120},
 		{
 			"fieldname": "lead_time",
 			"label": _("Lead Time (Days)"),
@@ -160,6 +152,20 @@ def get_columns_with_qty_to_make():
 			"label": _("Reorder Qty"),
 			"fieldtype": "Data",
 			"width": 120,
+		},
+		{
+			"fieldname": "",
+			"label": _("Daily Units"),
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{"fieldname": "available_qty", "label": _("Available Qty"), "fieldtype": "Data", "width": 120},
+		{"fieldname": "difference_qty", "label": _("Difference Qty"), "fieldtype": "Data", "width": 130},
+		{
+			"fieldname": "last_purchase_rate",
+			"label": _("Last Purchase Rate"),
+			"fieldtype": "Data",
+			"width": 160,
 		},
 	]
 
