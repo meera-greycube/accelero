@@ -9,6 +9,13 @@ frappe.query_reports["Items BOM"] = {
 			fieldtype: "Link",
 			options: "BOM",
 			reqd: 1,
+			get_query: function () {
+				return {
+					filters: {
+						docstatus: 1,
+					},
+				};
+			},
 		},
 		{
 			fieldname: "warehouse",

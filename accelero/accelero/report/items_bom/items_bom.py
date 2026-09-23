@@ -120,13 +120,13 @@ def get_columns_with_qty_to_make():
 			"options": "BOM",
 			"width": 150,
 		},
-		{"fieldname": "manufacturer", "label": _("Manufacturer"), "fieldtype": "Data", "width": 130},
-		{
-			"fieldname": "manufacturer_part_number",
-			"label": _("Manufacturer Part Number"),
-			"fieldtype": "Data",
-			"width": 170,
-		},
+		# {"fieldname": "manufacturer", "label": _("Manufacturer"), "fieldtype": "Data", "width": 130},
+		# {
+		# 	"fieldname": "manufacturer_part_number",
+		# 	"label": _("Manufacturer Part Number"),
+		# 	"fieldtype": "Data",
+		# 	"width": 170,
+		# },
 		{"fieldname": "qty_per_unit", "label": _("Qty"), "fieldtype": "Data", "width": 110},
 		{
 			"fieldname": "unit",
